@@ -3,6 +3,7 @@
 ## **Version 1.0 | 28 August 2025**
 
 ### **"When systems fail, build your own — so I did just that"**
+- BY OBINexus Nnamdi Michael Okpala
 
 ---
 
