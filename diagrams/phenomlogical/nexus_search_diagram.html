@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexus Search Phonological Architecture</title>
+    <style>
+        body {
+            font-family: 'Courier New', monospace;
+            background: #0a0a0a;
+            color: #00ff00;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .diagram-section {
+            margin-bottom: 40px;
+            border: 2px solid #00ff00;
+            padding: 20px;
+            background: rgba(0, 255, 0, 0.05);
+        }
+        .title {
+            color: #00ffff;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 30px;
+        }
+        .section-title {
+            color: #ffff00;
+            font-size: 18px;
+            margin-bottom: 15px;
+        }
+        .trie-node {
+            display: inline-block;
+            border: 2px solid #00ff00;
+            padding: 10px;
+            margin: 5px;
+            background: rgba(0, 255, 0, 0.1);
+            border-radius: 5px;
+        }
+        .character {
+            font-size: 20px;
+            font-weight: bold;
+            color: #00ffff;
+        }
+        .tremor-id {
+            font-size: 10px;
+            color: #ffff00;
+        }
+        .tier-box {
+            display: inline-block;
+            width: 200px;
+            height: 100px;
+            margin: 10px;
+            border: 3px solid;
+            padding: 15px;
+            text-align: center;
+            vertical-align: top;
+        }
+        .t1 { border-color: #00ff00; background: rgba(0, 255, 0, 0.1); }
+        .t2 { border-color: #ffaa00; background: rgba(255, 170, 0, 0.1); }
+        .t3a { border-color: #ff0066; background: rgba(255, 0, 102, 0.1); }
+        .t3b { border-color: #6600ff; background: rgba(102, 0, 255, 0.1); }
+        .flow-arrow {
+            color: #00ffff;
+            font-size: 24px;
+            margin: 0 10px;
+        }
+        .timeline {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 20px 0;
+        }
+        .milestone {
+            border: 2px solid #ffaa00;
+            padding: 10px;
+            background: rgba(255, 170, 0, 0.1);
+            text-align: center;
+            flex: 1;
+            margin: 0 5px;
+        }
+        .schema-path {
+            font-family: monospace;
+            background: rgba(255, 255, 0, 0.2);
+            padding: 10px;
+            border-left: 5px solid #ffff00;
+            margin: 15px 0;
+        }
+        .memory-struct {
+            border: 1px solid #00ffff;
+            padding: 15px;
+            margin: 10px 0;
+            background: rgba(0, 255, 255, 0.05);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="title">OBINEXUS NEXUS SEARCH PHONOLOGICAL ARCHITECTURE</div>
+        
+        <!-- Phonological Trie Structure -->
+        <div class="diagram-section">
+            <div class="section-title">1. Phonological Data Structure: "NNAMDI" Segmentation</div>
+            <div style="text-align: center; margin: 20px 0;">
+                <div class="trie-node">
+                    <div class="character">N</div>
+                    <div class="tremor-id">tremor:0x1a2b</div>
+                </div>
+                <span class="flow-arrow">→</span>
+                <div class="trie-node">
+                    <div class="character">n</div>
+                    <div class="tremor-id">tremor:0x3c4d</div>
+                </div>
+                <span class="flow-arrow">→</span>
+                <div class="trie-node">
+                    <div class="character">a</div>
+                    <div class="tremor-id">tremor:0x5e6f</div>
+                </div>
+                <span class="flow-arrow">→</span>
+                <div class="trie-node">
+                    <div class="character">m</div>
+                    <div class="tremor-id">tremor:0x7g8h</div>
+                </div>
+                <span class="flow-arrow">→</span>
+                <div class="trie-node">
+                    <div class="character">d</div>
+                    <div class="tremor-id">tremor:0x9i0j</div>
+                </div>
+                <span class="flow-arrow">→</span>
+                <div class="trie-node">
+                    <div class="character">i</div>
+                    <div class="tremor-id">tremor:0xklmn</div>
+                </div>
+            </div>
+            
+            <div class="memory-struct">
+                <strong>Nexus Memory Structure:</strong><br>
+                ├── phonological_index: TrieNode&lt;char&gt;<br>
+                ├── identity_resolver: HashMap&lt;NI_Number, PersonRecord&gt;<br>
+                ├── aura_segments: Array&lt;256_byte_blocks&gt;<br>
+                └── temporal_cache: LRU&lt;SearchQuery, ResultSet&gt;
+            </div>
+        </div>
+
+        <!-- Tier Classification System -->
+        <div class="diagram-section">
+            <div class="section-title">2. OBINexus Project Tier Classification</div>
+            <div style="text-align: center;">
+                <div class="tier-box t1">
+                    <strong>T1</strong><br>
+                    Open Access<br>
+                    Research Only<br>
+                    <small>Public Score-Based</small>
+                </div>
+                <div class="tier-box t2">
+                    <strong>T2</strong><br>
+                    Business Nexus<br>
+                    Partnership<br>
+                    <small>Commercial Integration</small>
+                </div>
+                <div class="tier-box t3a">
+                    <strong>T3A</strong><br>
+                    Research Lead<br>
+                    Eze Knowledge King<br>
+                    <small>Igbo Research Focus</small>
+                </div>
+                <div class="tier-box t3b">
+                    <strong>T3B</strong><br>
+                    R&D Operational<br>
+                    Real World Deploy<br>
+                    <small>Production Ready</small>
+                </div>
+            </div>
+        </div>
+
+        <!-- GDPR SAR Timeline -->
+        <div class="diagram-section">
+            <div class="section-title">3. GDPR SAR 30-Day Compliance Pipeline</div>
+            <div class="timeline">
+                <div class="milestone">
+                    <strong>Day 7</strong><br>
+                    Data Discovery<br>
+                    <small>Initial Search</small>
+                </div>
+                <span class="flow-arrow">→</span>
+                <div class="milestone">
+                    <strong>Day 14</strong><br>
+                    Data Compilation<br>
+                    <small>Nexus Processing</small>
+                </div>
+                <span class="flow-arrow">→</span>
+                <div class="milestone">
+                    <strong>Day 21</strong><br>
+                    Legal Review<br>
+                    <small>ICO Compliance</small>
+                </div>
+                <span class="flow-arrow">→</span>
+                <div class="milestone">
+                    <strong>Day 30</strong><br>
+                    Response Delivery<br>
+                    <small>Final Output</small>
+                </div>
+            </div>
+        </div>
+
+        <!-- Schema Structure -->
+        <div class="diagram-section">
+            <div class="section-title">4. Domain Schema Architecture</div>
+            <div class="schema-path">
+                sar.project/operation.obinexus.department.division.county.org
+            </div>
+            <div class="memory-struct">
+                <strong>Schema Breakdown:</strong><br>
+                ├── <span style="color: #00ffff">sar</span>: Subject Access Request Classification<br>
+                ├── <span style="color: #00ffff">project</span>: Request Processing Workflow<br>
+                ├── <span style="color: #00ffff">operation</span>: Data Retrieval Operations<br>
+                ├── <span style="color: #00ffff">obinexus</span>: Core Search Engine Integration<br>
+                ├── <span style="color: #00ffff">department</span>: Organizational Unit Routing<br>
+                ├── <span style="color: #00ffff">division</span>: Sub-Unit Classification<br>
+                └── <span style="color: #00ffff">county</span>: Geographical Jurisdiction Mapping
+            </div>
+        </div>
+
+        <!-- Identity Resolution Flow -->
+        <div class="diagram-section">
+            <div class="section-title">5. Identity Resolution Algorithm (Prevents NHS-Type Failures)</div>
+            <div class="memory-struct">
+                <strong>Resolution Process:</strong><br>
+                1. Phonological Match → Trie.search_phonological(query.name)<br>
+                2. Temporal Match → verify_dob(query.dob, phonological_match.records)<br>
+                3. NI Verification → validate_ni_number(query.ni, temporal_match)<br>
+                4. Isomorphic Check → ensure_unique_identity_resolution()<br>
+                5. Complete Record → build_complete_record(ni_verification)
+            </div>
+            
+            <div style="text-align: center; margin: 20px 0; color: #ff6666;">
+                <strong>PREVENTS: NHS Error "sy91865b" → Wrong "nnamdi Michael okplaa"</strong><br>
+                <span style="color: #00ff00">ENSURES: Correct Identity Resolution via Phonological + NI + DOB Triple Verification</span>
+            </div>
+        </div>
+
+        <!-- NSC CLI Integration -->
+        <div class="diagram-section">
+            <div class="section-title">6. NSC (Nexus Search Call) CLI Integration</div>
+            <div class="memory-struct">
+                <strong>CLI Commands:</strong><br>
+                $ nsc search --name "nnamdi" --ni "sy91865b" --dob "19052001"<br>
+                $ nsc sar-request --tier T3A --deadline 30days<br>
+                $ nsc validate-identity --phonological-match<br>
+                $ nsc export-gdpr --format pdf --domain obinexus.org
+            </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 40px; color: #00ffff; font-size: 14px;">
+            <strong>OBINexus.org | T3A Research Lead Project | Eze Knowledge King</strong><br>
+            <span style="color: #ffff00;">Phonological Data Structure Architecture v1.0</span>
+        </div>
+    </div>
+</body>
+</html>
