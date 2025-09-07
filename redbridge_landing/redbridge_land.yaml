@@ -1,0 +1,116 @@
+# OBINexus Redbridge Land Acquisition Protocol
+# Semantic Intent: hitl.hotl.protocol.redbridge.land.v1
+
+protocol_metadata:
+  name: "Redbridge Land Acquisition System"
+  version: "1.0"
+  author: "Namji/OBINexus"
+  objective: "Automate allotment acquisition process"
+  current_date: "2025-09-07"
+
+target_sites:
+  available:
+    - name: "Empress Avenue"
+      location: "Wanstead, E12"
+      status: "OPEN"
+      priority: 1
+    - name: "Redbridge Lane North"
+      location: "Nutter Lane, Wanstead, E11"
+      status: "OPEN"
+      priority: 2
+
+task_automation_matrix:
+  monitoring_tasks:
+    - class: "check-availability"
+      verb: "check"
+      noun: "availability"
+      confidence: 0.85
+      automation_level: "hotl_ready"
+      schedule: "daily_9am"
+      actions:
+        - visit_url: "https://visionrcl.org.uk/parks-outdoor-spaces/allotments/"
+        - check_status: ["Empress Avenue", "Redbridge Lane North"]
+        - log_changes: true
+        - alert_on_change: true
+    
+    - class: "monitor-waitlist"
+      verb: "monitor"
+      noun: "waitlist"
+      confidence: 0.90
+      automation_level: "hotl_active"
+      schedule: "weekly_monday"
+      actions:
+        - check_position: true
+        - estimate_timeline: true
+        - track_movement: true
+
+  application_tasks:
+    - class: "prepare-documents"
+      verb: "prepare"
+      noun: "documents"
+      confidence: 0.78
+      automation_level: "hitl_active"
+      required_docs:
+        - proof_of_address: "utility_bill_last_3_months"
+        - id_verification: "passport_or_driving_license"
+        - concession_evidence: "registered_disabled_proof"
+      storage: "secure_folder/redbridge_docs/"
+    
+    - class: "submit-application"
+      verb: "submit"
+      noun: "application"
+      confidence: 0.82
+      automation_level: "hotl_ready"
+      form_fields:
+        - applicant_name: "[auto_fill]"
+        - address: "[auto_fill]"
+        - contact_email: "[auto_fill]"
+        - preferred_site: "Empress Avenue"
+        - plot_size: "5_rods"
+        - concession_eligible: true
+
+  follow_up_tasks:
+    - class: "track-response"
+      verb: "track"
+      noun: "response"
+      confidence: 0.88
+      automation_level: "hotl_active"
+      triggers:
+        - email_monitoring: true
+        - phone_log: true
+        - status_updates: true
+
+contact_automation:
+  vision_rcl:
+    main_phone: "020 8708 2414"
+    email: "library.information@visionrcl.org.uk"
+    auto_contact_schedule: "bi_weekly"
+    
+  lab_central:
+    phone: "020 8708 2414"
+    email: "library.information@visionrcl.org.uk"
+    purpose: "coding_volunteer_coordination"
+
+dimensional_alignment:
+  offensive_actions:
+    - submit_application
+    - contact_council
+    - request_priority
+  defensive_actions:
+    - document_evidence
+    - maintain_eligibility
+    - preserve_communications
+  tactical_actions:
+    - build_relationships
+    - volunteer_visibility
+    - community_engagement
+
+automation_gates:
+  confidence_threshold: 0.80
+  validation_requirements:
+    - internal: "task_consistency_check"
+    - external: "response_verification"
+  error_handling:
+    - retry_limit: 3
+    - escalate_to_human: true
+    - log_all_attempts: true
