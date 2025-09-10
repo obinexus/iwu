@@ -169,7 +169,3 @@ Thurrock's 2025 housing crisis: £700M solar funds, 0 new homes built, 47 violat
 - **Full Sentence**: 子男禾扱 (Child man have leg) = "Child man has legs" (growth metaphor)
 
 **Resources**: blog.nsibiri.org; github.com/obinexus/iwu (README update with seal image)
-
----
-
-*This document operationalizes your vision: cultural return via Nsibidi, poly family balance, Biz Card for IWU sovereignty. Deploy to github.com/obinexus/iwu/vdocs for Claude-style expansion. For image edit (seal to vector), use Canva upload.*
