@@ -1,0 +1,50 @@
+book:
+  title: "Blood, Sweat and Tears - Civil Uprising"
+  subtitle: "When Systems Failed Me, I Built My OWN"
+  tagline: "The Change Started with Me (and U should too)"
+  author: "Nnamdi Michael Okpala"
+  author_title: "Prince of Nnewi, Constitutional Architect"
+  series: "Blood, Sweat and Tears"
+  volume: 2
+  language: "English"
+  genres:
+    - "Technology Manifesto"
+    - "Social Innovation"
+    - "Constitutional Theory"
+    - "Autobiography"
+  tags:
+    - civiluprising
+    - obinexus
+    - systembuilding
+    - constitutionaltech
+    - when-systems-fail
+    - build-your-own
+    - genz-voices
+  themes:
+    primary:
+      - "System Building"
+      - "Constitutional Technology"
+      - "Personal Sovereignty"
+    secondary:
+      - "Open Source Philosophy"
+      - "Community Building"
+      - "Healing Infrastructure"
+  target_audience:
+    - "System builders"
+    - "Open source developers"
+    - "Social entrepreneurs"
+    - "Constitutional scholars"
+    - "Movement leaders"
+  content_features:
+    - "Technical blueprints"
+    - "Constitutional frameworks"
+    - "Code examples"
+    - "Implementation guides"
+  isbn: "TBD"
+  publication_status: "in-development"
+  obinexus_alignment:
+    - business-card-system
+    - nlm-atlas-framework
+    - hitl-hotl-methodology
+  estimated_word_count: 100000
+  target_completion: "2025-Q3"

@@ -1,0 +1,50 @@
+book:
+  title: "Blood, Sweat and Tears - Civil Collapse"
+  subtitle: "A Generation Left Behind"
+  author: "Nnamdi Michael Okpala"
+  author_title: "Prince of Nnewi, Constitutional Architect"
+  series: "Blood, Sweat and Tears"
+  volume: 1
+  language: "English"
+  genres:
+    - "Memoir"
+    - "Social Justice"
+    - "Technology"
+    - "Constitutional Law"
+  tags:
+    - civilcollapse
+    - neurodivergent
+    - constitutional-tech
+    - gen-z
+    - autism
+    - adhd
+    - homelessness
+    - systematic-healing
+  themes:
+    primary:
+      - "Institutional Failure"
+      - "Neurodivergent Survival"
+      - "Constitutional Innovation"
+    secondary:
+      - "Digital Rights"
+      - "Social Justice"
+      - "Systematic Healing"
+  target_audience:
+    - "Gen Z activists"
+    - "Neurodivergent individuals"
+    - "Social justice advocates"
+    - "Technology innovators"
+    - "Policy makers"
+  content_warnings:
+    - "Discussions of homelessness"
+    - "Institutional trauma"
+    - "Mental health challenges"
+    - "Systematic discrimination"
+  isbn: "TBD"
+  publication_status: "draft"
+  obinexus_alignment:
+    - iwu-constitutional-framework
+    - mask-removal-philosophy
+    - soul-of-u-framework
+  estimated_word_count: 80000
+  target_completion: "2025-Q2"
