@@ -4,6 +4,7 @@
 **"When systems fail, build your own — so I did just that"**  
 *By Nnamdi Michael Okpala, Prince of Nnewi, Constitutional Architect*
 
+
 ---
 
 ## Executive Summary
@@ -26,7 +27,7 @@ The hand-drawn image depicts a circular Nsibidi-inspired seal: a central **Bent 
 6. [Implementation Roadmap](#roadmap)
 7. [Thurrock Council Challenge](#thurrock-challenge)
 8. [Glossary & Nsibidi Examples](#glossary)
-
+9. [The BIRTH of a Constitution](./books/README.md)
 ---
 
 ## 1. Cultural Foundation: Nsibidi in IWU {#cultural-foundation}
