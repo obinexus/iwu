@@ -1,0 +1,29 @@
+{
+  "name": "OBINexus IWU Assets",
+  "version": "1.0.0",
+  "timestamp": "'$(date -u +"%Y-%m-%dT%H:%M:%SZ")'",
+  "assets": {
+    "nsibidi": {
+      "seal-favicon": "vdocs/images/nsibidi/seal-favicon.jpg",
+      "business-card": "vdocs/images/nsibidi/business-card-seal.jpg",
+      "workbook": "vdocs/Nsibidi_Workbook_1.pdf"
+    },
+    "diagrams": {
+      "gating-system": "vdocs/images/diagrams/gating-system.png"
+    },
+    "personas": {
+      "development-framework": "vdocs/images/personas/persona-development.webp"
+    },
+    "core": {
+      "logo": "vdocs/images/obinexus_logo.png",
+      "civil-collapse": "vdocs/images/civil_collapse_02_08_2025.png"
+    }
+  },
+  "tags": [
+    "civilcollapse",
+    "civiluprising",
+    "civilcollapsemovement",
+    "genz-voices",
+    "obinexus"
+  ]
+}

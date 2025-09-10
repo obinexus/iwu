@@ -1,0 +1,22 @@
+# Book build outputs
+*/*/dist/
+*.pdf
+*.epub
+
+# Temporary files
+*.tmp
+*.swp
+*~
+
+# Personal notes
+personal-notes/
+private/
+
+# Large media files (store separately)
+*.mp4
+*.mov
+*.wav
+
+# But keep sample outputs
+!samples/*.pdf
+!samples/*.epub
